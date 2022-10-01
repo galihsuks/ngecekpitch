@@ -7,23 +7,212 @@
     font-family: 'Poppins';
 }
 
-body {
+header {
+    display: inline;
+}
+
+.navbar {
+    height: 50px;
+    position: sticky;
+    background-color: #f55847;
+    width: 100%;
+    top: 0;
+}
+
+.namaApp {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+    line-height: 50px;
+    color: white;
+}
+
+ul{
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    top: 50px;
+    margin-right: 0;
+    background-color: #f55847;
+    text-align: center;
+    right: -100%;
+    transition: .5s;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+ul li {
+    display: block;
+    line-height: 50px;
+    margin: 0 10px;
+    line-height: 30px;
+    margin: 5px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+label #btn {
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 50px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: block;
+}
+
+#check {
+    display: none;
+}
+#check:checked ~ ul{
+    right: 0;
+}
+.langkah-langkah {
     background-color: #271f44;
-    height: 100vh
-}
-h1 {
+    width: 100%;
+    height: 95vh;
     color: white;
+    padding-top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#freq {
+.data-langkah {
+    display: none;
+}
+.data-langkah.active {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+}
+.infoLangkah h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.infoLangkah p {
+    font-size: 15px;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    margin-block: 10px;
+}
+
+.soal {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.soal > div {
+    margin-inline: 5px;
+}
+.soal section {
+    display: flex;
+    justify-content: center;
+    margin-inline: 5px;
+}
+.audioIconBsr {
+    cursor: pointer;
+}
+.audioIconBsr i {
+    font-size: 200px;
+    width: 135px;
+    margin-left: -25px;
+}
+.audioIconBsr p {
     font-size: 100px;
+    height: 115px;
+    margin-top: 65px;
+    padding-right: 10px;
     font-weight: bold;
-    color: #f55847;
 }
-#result {
-    color: white;
+.audioIconKcl {
+    cursor: pointer;
+}
+.audioIconKcl i {
+    line-height: 60px;
     font-size: 50px;
+    width: 35px;
+}
+.audioIconKcl p {
+    font-size: 25px;
+    margin-top: 17px;
+    font-weight: bold;
+}
+
+.soalText {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.jawaban {
+    width: 200px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.tuner {
+    display: flex;
+    justify-content: center;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: center;
+}
+.inputBox input {
+    border: 1px solid white;
+    background: #271f44;
+    border-radius: 5px;
+    height: 25px;
+    color: white;
+    outline: none;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.penghitung {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gambar {
+    display: flex;
+    justify-content: center;
+}
+.gambar img {
+    width: 300px;
+}
+
+#berhasil {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    width: 70%;
+    left: -100%;
+    background-color: #f55847;
+    border-right: 3px solid #271f44;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+#berhasil p {
+    margin-top: 30px;
+    width: 200px;
 }
